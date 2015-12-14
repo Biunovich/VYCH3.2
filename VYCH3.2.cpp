@@ -18,7 +18,7 @@ public:
 		printf("\n");
 		sttau = 1.0 / jt;
 		sth = 1.0 / kt;
-		kurt = sttau / 2.0*sth;
+		kurt = sttau / (2.0*sth);
 		arr = (double**)calloc(sizeof(double*), jt + 1);
 		for (int i = 0; i < jt + 1; i++)
 			arr[i] = (double*)calloc(sizeof(double), kt + 1);
